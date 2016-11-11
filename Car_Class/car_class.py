@@ -10,13 +10,16 @@ class Car(object):
 		self.name = name
 		self.model = model
 		self.v_type = v_type
-		if self.name == 'Porsche' or self.name == 'Koenigsegg':
+		if self.name == 'Porshe' or self.name == 'Koenigsegg':
 			self.num_of_doors = 2
 		if self.v_type == 'trailer':
 			self.num_of_wheels = 8
 
 	def is_saloon(self):
-		self.v_type = 'saloon'
+		if self.v_type == 'saloon':
+			return True
+		else:
+			return False
 
 	def drive(self, drive):
 		self.speed = 0
