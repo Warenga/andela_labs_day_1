@@ -16,5 +16,7 @@ def data_type(data):
 			return "more than 100"
 		else:
 			return "equal to 100"
+	elif type(data) == str:
+		return len(data)
 	else:
-		pass
+		return type(data)
