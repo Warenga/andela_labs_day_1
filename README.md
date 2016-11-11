@@ -16,3 +16,8 @@ Lists returns the 3rd item, or None if it doesn't exist
 
 ### 2. FizzBuzz
 A function that returns 'Fizz' if argument given is divisible by 3, 'Buzz' if argument given is divisible by 5, 'FizzBuzz' if argument given is divisible by 3 and 5, or the argument it receives if argument given is not divisible by 3 or 5.
+
+### 3. Car Class
+A Car class that instantiates various vehicles. It takes in arguments that depict the type, model, and name of the vehicle, provided they are set.
+
+
