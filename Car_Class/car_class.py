@@ -28,8 +28,8 @@ class Car(object):
 			speed_calc = str(speed) + str(speed)
 			self.speed = int(speed_calc)
 		else:
-			if speed == 3:
-				self.speed = 1000
+			speed_calc = speed * (3 * 100)
+			self.speed = speed_calc + 100
 		return self
 
 
