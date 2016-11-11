@@ -7,4 +7,4 @@ def fizz_buzz(num):
 	elif num % 5 == 0:
 		return "Buzz"
 	else:
-		pass
+		return num
