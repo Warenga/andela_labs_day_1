@@ -3,15 +3,17 @@ class Car(object):
 
 	num_of_doors = 4
 	num_of_wheels = 4
-	speed = 0
 	
 
 	def __init__(self, name='General', model='GM', v_type='saloon'):
 		self.name = name
 		self.model = model
 		self.v_type = v_type
+		self.speed = 0
+
 		if self.name == 'Porshe' or self.name == 'Koenigsegg':
 			self.num_of_doors = 2
+
 		if self.v_type == 'trailer':
 			self.num_of_wheels = 8
 
@@ -21,15 +23,15 @@ class Car(object):
 		else:
 			return False
 
-	def drive(self, drive):
-		self.speed = 0
+	def drive(self, speed):
 		if self.v_type == 'trailer':
-			if drive == 7:
-				self.speed = 77
+			speed_calc = str(speed) + str(speed)
+			self.speed = int(speed_calc)
 		else:
-			if drive == 3:
+			if speed == 3:
 				self.speed = 1000
-		return self.speed
+		return self
+
 
 
 
